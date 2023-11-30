@@ -22,7 +22,7 @@
       <ul>
         <li>
           <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="21" height="31" rx="10.5" stroke="currentColor"/>
+            <rect x="0.75" y="0.75" width="20.5" height="30.5" rx="10.25" stroke="currentColor" stroke-width="1.5"/>
             <path d="M10 15H5.00691C4.45463 15 4.00691 14.5523 4.00691 14V13.0333C4.00691 13.0111 4.00634 12.992 4.00529 12.9698C3.9823 12.4828 3.80705 6.23656 9.81646 4.30559C10.4173 4.11251 11 4.58892 11 5.22004V14C11 14.5523 10.5523 15 10 15Z" fill="currentColor"/>
           </svg>
 
