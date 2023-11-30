@@ -147,7 +147,7 @@ class Ball {
 
 function populateCanvas() {
   for (let i = 0; i < ballAmount; i++) {
-    const radius = Math.floor(randomIntFromRange(15, innerWidth * 0.03, false));
+    const radius = Math.floor(randomIntFromRange(15, 40, false));
     const creationTry = tryCreatingBall(radius);
 
     if (creationTry !== false) {
