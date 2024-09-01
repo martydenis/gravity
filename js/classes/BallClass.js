@@ -12,12 +12,12 @@ export class Ball {
         this.oldPosition.x += 0.5 - Math.random();
     }
 
-    update (deltaTime) {
+    update (delta) {
         const temporaryPosition = this.position;
 
         this.position = {
             x: (this.position.x * 2 - this.oldPosition.x),
-            y: ((this.position.y * 2 - this.oldPosition.y) + GRAVITY * deltaTime * deltaTime),
+            y: ((this.position.y * 2 - this.oldPosition.y) + GRAVITY * delta * delta),
         };
 
         this.oldPosition = temporaryPosition;

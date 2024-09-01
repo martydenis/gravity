@@ -17,7 +17,6 @@ class SystemManager {
             '#543864',
             '#8B4367',
             '#FF6464',
-            // '#163c36'
         ];
     }
 
@@ -31,6 +30,7 @@ class SystemManager {
         ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
         for (let step = 0; step < this.subSteps; step++) {
+            this.applyConstraints();
             this.updateBalls(stepDeltaTime);
             this.checkCollisions(stepDeltaTime);
             this.applyConstraints();
@@ -39,9 +39,9 @@ class SystemManager {
         this.renderBalls();
     }
 
-    updateBalls (deltaTime) {
+    updateBalls (delta) {
         for (const ball of balls) {
-            ball.update(deltaTime);
+            ball.update(delta);
         }
     }
 
