@@ -10,7 +10,6 @@ class AnimationManager {
 
         oldTime = new Date();
         balls.map(ball => ball.update());
-        balls.map(ball => ball.update());
 
         requestAnimationFrame(this.raf);
     }

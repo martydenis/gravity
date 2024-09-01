@@ -32,8 +32,6 @@ class SystemManager {
 
         for (let step = 0; step < this.subSteps; step++) {
             this.updateBalls(stepDeltaTime);
-            // Applying constraints here AND after checkCollisions seems to fix a bug where balls would fly up glitching on the sides of the container.
-            this.applyConstraints();
             this.checkCollisions(stepDeltaTime);
             this.applyConstraints();
         }
